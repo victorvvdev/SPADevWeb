@@ -7,7 +7,6 @@ function Home() {
   const [games, setGames] = useState([]);
 
   useEffect(() => {
-    // Simula uma requisição assíncrona
     setGames(mockItems);
   }, []);
 

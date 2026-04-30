@@ -18,6 +18,6 @@ Antes de começar, você precisará ter instalado em sua máquina:
 ## Instruções para Execução
    ```bash
    git clone https://github.com/victorvvdev/SPADevWeb.git
-   cd NOME_DO_REPO
+   cd SPADevWeb
    npm install
    npm run dev

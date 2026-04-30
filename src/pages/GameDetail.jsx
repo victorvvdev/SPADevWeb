@@ -10,14 +10,12 @@ function GameDetail() {
   const [game, setGame] = useState(null);
 
   useEffect(() => {
-    // Busca o item no array pelo ID (convertendo id da URL para número)
     const foundGame = items.find(item => item.id === parseInt(id));
     setGame(foundGame);
   }, [id]);
 
   const handleFavoritar = () => {
     alert(`${game.nome} adicionado aos favoritos!`);
-    // Aqui você poderia salvar no localStorage em um projeto real
   };
 
   if (!game) return <h2>Carregando ou Jogo não encontrado...</h2>;
@@ -29,7 +27,7 @@ function GameDetail() {
         <Card.Subtitle className="mb-3 text-muted">Categoria: {game.categoria}</Card.Subtitle>
         <Card.Text>{game.descricao}</Card.Text>
         
-        <CustomButton text="⭐ Favoritar" onClick={handleFavoritar} />
+        <CustomButton text="Favoritar" onClick={handleFavoritar} />
         <Button variant="secondary" className="mt-2 ms-2" onClick={() => navigate(-1)}>
           Voltar
         </Button>

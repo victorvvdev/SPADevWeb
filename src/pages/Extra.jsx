@@ -6,7 +6,6 @@ function Extra() {
   const [favoritos, setFavoritos] = useState([]);
 
   useEffect(() => {
-    // Simulando que os IDs 1 e 3 estão favoritados
     const itensFavoritados = items.filter(item => item.id === 1 || item.id === 3);
     setFavoritos(itensFavoritados);
   }, []);
